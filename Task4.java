@@ -1,17 +1,24 @@
-import java.util.Scanner;
-	public class Task4{
-	public static void main(String...args){
+public class Task4{
 
-	Scanner input = new Scanner(System.in);
+    public static boolean getReachPump(int distance, int mpg, int gallons) {
 
-	System.out.println("Enter a number");
-	int TheNumber = input.nextInt();
+        int mainDistance = mpg * gallons;
 
-	if(TheNumber > 0){
-	System.out.println(TheNumber  + "  is a Positive number");
-}
-	else
-	System.out.println(TheNumber  + "  is  a Negative number");
+        if (mainDistance >= distance) {
 
-	}
-}
+            return true;
+
+        } else {
+
+            return false;
+
+        }
+    }
+
+    public static void main(String...args) {
+
+        System.out.println(getReachPump(50, 25, 2));
+
+    }
+
+} 
