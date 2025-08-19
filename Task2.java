@@ -1,50 +1,43 @@
-import java.util.Scanner;
-	
-	public class Task2{
-	public static void main(String...args){
-	Scanner input = new Scanner(System.in);
 
-	System.out.println("Enter a Digits");
-	int firstNumber = input.nextInt();
+public class Task2 {
 
-	System.out.println("Enter the Second Digits");
-	int secondNumber = input.nextInt();
-
-	System.out.println("Enter last Digits");
-	int lastNumber = input.nextInt();
-	
-	int theirSum = firstNumber + secondNumber + lastNumber;
-	System.out.println("Their Sum Is  " +  theirSum);
-
-	int theirAverage = theirSum / 2;
-	System.out.println("The Average is  "  +  theirAverage);
-
-	
-	int theirProduct = firstNumber * secondNumber * lastNumber;
-	System.out.println("The Product is  "  +  theirProduct);
-	
-	int largest = secondNumber;
-
-	if(lastNumber > secondNumber){
-	 largest = lastNumber;
-	}
-	else if(firstNumber > secondNumber){
-	 largest = firstNumber;
-	}
-
-	System.out.println("The Largest is  "  + largest);
-	
-	int smallest = secondNumber;
-
-	if(lastNumber < secondNumber){
-	 smallest = lastNumber;
-	}
-	else if(firstNumber < secondNumber){
-	 smallest = firstNumber;
-	}
-
-	System.out.println("The smallest is  "  + smallest);
+    public static void main(String...args) {
 	
 
-}
+	int score1 = 100;
+
+	int score2 = 30;
+
+	int score3 = 40;
+	
+
+        int theSum = score1 + score2 + score3;
+
+	double theAverage = theSum / 2.0;
+	
+
+       
+        if (theAverage >= 90 && theAverage <= 100) {
+        System.out.println("A");
+
+        } else if (theAverage >= 80 && theAverage < 90) {
+          System.out.println("B");
+
+        }
+	 else if (theAverage >= 70 && theAverage < 80) {
+          System.out.println("C");
+
+        }
+	 else if (theAverage >= 60 && theAverage < 70) {
+          System.out.println("D");
+
+        }
+	 else if (theAverage >= 0 && theAverage < 60) {
+          System.out.println("YOU ARE A FAILURE");
+
+        } 
+	else {
+         System.out.println("INVALID INPUT");
+        }
+    }
 }
