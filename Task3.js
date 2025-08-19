@@ -1,7 +1,5 @@
 
-public class LikesMessage {
-
-	public static String getLikesMessage(Arr[] Arrray) {
+Function LikesMessage(Arr[] Arrray){
 
 	if (Arrray == null || Arrray.length == 0) {
 
@@ -23,24 +21,8 @@ public class LikesMessage {
 	return "Peter , Jacob and others likes this";
 }
 }
-	public static void main(String...args){
 
-	int[] Arrray = {"Peter", "Alex", "Jacob"};
+	Let Arrray = {"Peter", "Alex", "Jacob"};
 	
-	System.out.println(getLikesMessage(Str[], Arrray);
+	console.log(getLikesMessage(Str[], Arrray);
 }
-}
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
